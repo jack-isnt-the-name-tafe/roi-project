@@ -5,6 +5,18 @@ export default function SignUpScreen(props) {
   return (
     <View style={styles.container}>
       <Text  style={styles.text}>Sign Up Screen</Text>
+      <Button
+        title='Go Back to Login'
+        onPress={() => {
+          props.navigation.goBack()
+        }}
+      />
+      <Button
+        title='Go to Error'
+        onPress={() => {
+          props.navigation.navigate('Error')
+        }}
+      />
     </View>
   )
 }
