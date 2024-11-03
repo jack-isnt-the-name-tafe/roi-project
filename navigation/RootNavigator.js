@@ -23,10 +23,6 @@ export default function RootNavigator() {
         name='Error'
         component={ErrorScreen}
       />
-      <Stack.Screen
-        name='Main'
-        component={MainScreen}
-      />
     </Stack.Navigator>
   );
 }
